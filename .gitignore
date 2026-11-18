@@ -8,3 +8,14 @@ dist/
 
 # Logs
 .DS_Store
+
+logs/
+
+
+.env
+
+mongo/
+postgres/
+/src/generated/prisma
+
+/src/generated/prisma
