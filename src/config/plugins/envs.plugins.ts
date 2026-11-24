@@ -19,10 +19,10 @@ export const envs = {
 
 // Postgres
     
-    POSTGRES_URL: process.env.POSTGRES_URL,
-    POSTGRES_USER: process.env.POSTGRES_USER,
-    POSTGRES_DB: process.env.POSTGRES_DB,
-    POSTGRES_PASSWORD: process.env.POSTGRES_PASSWORD,
+    POSTGRES_URL: env.get('POSTGRES_URL').required().asString(),
+    POSTGRES_USER: env.get('POSTGRES_USER').required().asString(),
+    POSTGRES_DB: env.get('POSTGRES_DB').required().asString(),
+    POSTGRES_PASSWORD: env.get('POSTGRES_PASSWORD').required().asString(),
 
 };
 
